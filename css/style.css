@@ -4470,6 +4470,12 @@ body.dark .collaborator-logo:hover {
   text-transform: uppercase;
 }
 
+.home .page-hero .hero-copy p,
+.home .page-hero blockquote,
+.home .split-block p {
+  text-align: justify;
+}
+
 .eyebrow {
   display: inline-block;
   color: var(--skin-color);
