@@ -5163,7 +5163,7 @@ body.dark .secondary-link {
   }
 }
 
-/* Justified narrative text (Home + About + Projects) */
+/* Justified narrative text (Home + About + Projects + News) */
 #home .page-hero .hero-copy p,
 #home .page-hero blockquote,
 #home .split-block p,
@@ -5174,7 +5174,8 @@ body.dark .secondary-link {
 #projects .prose-section p,
 #projects .project-detail .project-copy > p,
 #projects .project-columns p,
-#projects .content-block .feature-card p {
+#projects .content-block .feature-card p,
+#news .news-body p {
   text-align: justify;
   hyphens: auto;
   text-wrap: pretty;
