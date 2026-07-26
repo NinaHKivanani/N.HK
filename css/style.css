@@ -4476,11 +4476,6 @@ body.dark .collaborator-logo:hover {
   text-align: justify;
 }
 
-.about .prose-section p,
-.about .about-grid .feature-card p {
-  text-align: justify;
-}
-
 .eyebrow {
   display: inline-block;
   color: var(--skin-color);
@@ -4691,6 +4686,11 @@ body.dark .collaborator-logo:hover {
   font-size: 15px;
   line-height: 1.75;
   text-align: left;
+}
+
+.about .prose-section p,
+.about .about-grid .feature-card p {
+  text-align: justify;
 }
 
 .card-number,
