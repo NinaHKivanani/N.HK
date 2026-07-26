@@ -4470,12 +4470,6 @@ body.dark .collaborator-logo:hover {
   text-transform: uppercase;
 }
 
-.home .page-hero .hero-copy p,
-.home .page-hero blockquote,
-.home .split-block p {
-  text-align: justify;
-}
-
 .eyebrow {
   display: inline-block;
   color: var(--skin-color);
@@ -4686,11 +4680,6 @@ body.dark .collaborator-logo:hover {
   font-size: 15px;
   line-height: 1.75;
   text-align: left;
-}
-
-.about .prose-section p,
-.about .about-grid .feature-card p {
-  text-align: justify;
 }
 
 .card-number,
@@ -5135,4 +5124,16 @@ body.dark .secondary-link {
     display: inline-block;
     margin-bottom: 12px;
   }
+}
+
+/* Justified narrative text (Home + About) */
+#home .page-hero .hero-copy p,
+#home .page-hero blockquote,
+#home .split-block p,
+#about .page-hero .hero-copy p,
+#about .prose-section p,
+#about .about-grid .feature-card p {
+  text-align: justify;
+  hyphens: auto;
+  text-wrap: pretty;
 }
