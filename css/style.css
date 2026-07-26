@@ -2276,18 +2276,21 @@ body.dark .shadow-dark {
     width: 100%;
 }
 
-.publication-year-header {
+.publication-year-group {
     margin-top: 52px;
-    margin-bottom: 24px;
-    padding-bottom: 14px;
-    border-bottom: 3px solid var(--border-color);
+}
+
+.publication-year-group:first-of-type {
+    margin-top: 0;
+}
+
+.publication-year-header {
+    margin: 0 0 0;
+    padding: 20px 28px 16px;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     gap: 14px;
-}
-
-.publication-year-header:first-of-type {
-    margin-top: 0;
 }
 
 .publication-year-header h3 {
@@ -2296,6 +2299,35 @@ body.dark .shadow-dark {
     color: var(--text-black-900);
     font-family: "Rubik", sans-serif;
     margin: 0;
+}
+
+.publication-year-block {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid var(--skin-color);
+    overflow: hidden;
+}
+
+.publication-year-block .publication-item {
+    margin-bottom: 0;
+    padding: 24px 28px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.publication-year-block .publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-year-block .publication-item:hover {
+    transform: none;
+    box-shadow: none;
+    background-color: rgba(33, 150, 243, 0.04);
 }
 
 .publication-item {
@@ -2337,8 +2369,13 @@ body.dark .shadow-dark {
 }
 
 /* Dark theme styles */
-body.dark .publication-year-header {
+body.dark .publication-year-header,
+body.dark .publication-year-block .publication-item {
     border-bottom-color: #3a3a3a;
+}
+
+body.dark .publication-year-block .publication-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .publication-links {
@@ -5126,13 +5163,18 @@ body.dark .secondary-link {
   }
 }
 
-/* Justified narrative text (Home + About) */
+/* Justified narrative text (Home + About + Projects) */
 #home .page-hero .hero-copy p,
 #home .page-hero blockquote,
 #home .split-block p,
 #about .page-hero .hero-copy p,
 #about .prose-section p,
-#about .about-grid .feature-card p {
+#about .about-grid .feature-card p,
+#projects .page-hero .hero-copy p,
+#projects .prose-section p,
+#projects .project-detail .project-copy > p,
+#projects .project-columns p,
+#projects .content-block .feature-card p {
   text-align: justify;
   hyphens: auto;
   text-wrap: pretty;
