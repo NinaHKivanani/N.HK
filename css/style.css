@@ -863,6 +863,19 @@ select {
 /* Teaching Section */
 .teaching .teaching-content {
   width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.teaching .talks-content {
+  flex: 0 0 100%;
+}
+
+.teaching .activity-section-panel {
+  border: none;
+  border-left: 4px solid var(--skin-color);
+  padding: clamp(18px, 3.5vw, 42px) clamp(20px, 4vw, 46px);
+  margin-bottom: 24px;
 }
 
 .teaching-item {
@@ -3675,6 +3688,10 @@ body.dark .project-text .link-btn {
 .subsection-heading .fa {
   color: var(--skin-color);
   font-size: 20px;
+}
+
+.teaching .subsection-heading:not(:first-of-type) {
+  margin-top: 48px;
 }
 
 /* teaching-body wrapper inside teaching-item */
